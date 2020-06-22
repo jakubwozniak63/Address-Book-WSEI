@@ -1,0 +1,76 @@
+﻿<Window x:Class="Address_Book.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Address_Book"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <DockPanel>
+
+        <Grid DockPanel.Dock="Top" Height="50" Background="WhiteSmoke">
+            <Grid.ColumnDefinitions>
+
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+
+            </Grid.ColumnDefinitions>
+            
+            <Grid Grid.Column="0">
+                <Button Content="Favorite"/>
+            </Grid>
+
+            <Grid Grid.Column="1">
+                <Button Content="Contacts" />
+            </Grid>
+            
+            <StackPanel Grid.Column="6" Grid.ColumnSpan="2" Orientation="Horizontal" HorizontalAlignment="Right">
+
+                <Button Background="White">
+                    <Button.Content>
+                        <Image Height="35" Width="32" Source="/NewFolder1/users3_add.png" />
+                    </Button.Content>
+                </Button>
+
+                <Button Background="White">
+                    <Button.Content>
+                        <Image Height="35" Width="32" Source= "/NewFolder1/edit.png"/>
+
+                    </Button.Content>
+                </Button>
+
+                <Button Background="White">
+                    <Button.Content>
+                        <Image Height="35" Width="32" Source="/NewFolder1/delete.png" />
+
+                    </Button.Content>
+                </Button>
+
+            </StackPanel>
+
+        </Grid>
+
+
+     
+
+       
+
+            
+            <Grid DockPanel.Dock="Bottom">
+
+            <ContentControl Content="" />
+                
+
+        </Grid>
+            
+        
+        
+
+    </DockPanel>
+                
+</Window>
